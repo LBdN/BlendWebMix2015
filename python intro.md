@@ -149,7 +149,7 @@ TypeError: cannot concatenate 'str' and 'int' objects
 * opencv : traitement d'image
 * ast manipulation : meta-programming, lisp macros
 
-# Et puis Python vers js :P
+# Et puis Python vers js 😛
 
 * brython
 * pypy.js
