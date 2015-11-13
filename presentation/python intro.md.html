@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<title>Intro fun &amp; speedé à Python</title>
+
+<meta name="description" content="Intro fun &amp; speedé à Python">
+
+  <meta name="author" content="29/10/2015" />
+
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<link rel="stylesheet" href="revealjs/css/reveal.min.css">
+  <link rel="stylesheet" href="revealjs/css/theme/default.css" id="theme">
+
+
+<!-- For syntax highlighting -->
+  <link rel="stylesheet" href="revealjs/lib/css/zenburn.css">
+
+
+<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+<script>
+  document.write( '<link rel="stylesheet" href="revealjs/css/print/' +
+    ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) +
+    '.css" type="text/css" media="print">' );
+</script>
+
+<!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+
+<section>
+<h1>Intro fun &amp; speedé à Python</h1>
+<h3>29/10/2015</h3>
+<p>
+<h4></h4>
+</p>
+</section>
+
+
+<section id="intro" class="level1">
+<h1>Intro</h1>
+<ul>
+<li>Tim, Game developper</li>
+<li>&quot;Python, not for me&quot;</li>
+<li>Deux ans</li>
+<li>Deux bières</li>
+</ul>
+</section>
+<section id="python-not-in-the-browser-but-everywhere" class="level1">
+<h1>Python not in the browser but everywhere!</h1>
+</section>
+<section id="python-on-the-web" class="level1">
+<h1>Python on the web</h1>
+<p><img src="./img/django-ajax.png" /><br /> * beaucoup d'entreprises</p>
+</section>
+<section id="everywhere-else" class="level1">
+<h1>Everywhere else</h1>
+<ul>
+<li>sysadmin (linux distribs)</li>
+<li>desktop app</li>
+<li>big data / science</li>
+<li>3d</li>
+</ul>
+</section>
+<section id="how" class="level1">
+<h1>How ?</h1>
+<figure>
+<img src="./img/drawing.png" />
+</figure>
+</section>
+<section id="python-is-fast-for-you" class="level1">
+<h1>Python is fast for you !</h1>
+</section>
+<section id="you-know-python" class="level1">
+<h1>You know python !</h1>
+<pre><code>def filter(values, max):
+    results = list()
+    for val in values:
+        if val &lt; max:
+            results.append(val)
+    return results
+
+class Test(object):
+    def do_something(self, a, b):
+        return a + b</code></pre>
+</section>
+<section id="easy-to-learn-read-write" class="level1">
+<h1>Easy to learn, read &amp; write</h1>
+<p>“I came to Python (...) because it was the best pseudocode. Python has the edge (with a large number of students) when the main goal is communication, not programming per se.”</p>
+<p>“Python has the philosophy of making sensible compromises that make the easy things very easy, and don't preclude too many hard things.” Norvig</p>
+<ul>
+<li>only in two ends.</li>
+</ul>
+</section>
+<section id="first-step" class="level1">
+<h1>First step</h1>
+<ul>
+<li>get python</li>
+<li>get pip &amp; venv ** pypi</li>
+<li>get ipython</li>
+<li>Experiment &amp; read a lot of code</li>
+<li>Communicate</li>
+</ul>
+</section>
+<section id="semantics" class="level1">
+<h1>Semantics</h1>
+<ul>
+<li>everything is an object</li>
+<li>only names, values</li>
+<li>runtime is your friend (repl, no compilation)</li>
+<li>repl</li>
+</ul>
+</section>
+<section id="fractal-setup" class="level1">
+<h1>Fractal &amp; setup</h1>
+<figure>
+<img src="./img/fractal.png" />
+</figure>
+</section>
+<section id="lets-do-it" class="level1">
+<h1>Let's do it!</h1>
+<ul>
+<li>requirements.txt</li>
+<li>setup</li>
+<li>fractal</li>
+<li>best practice</li>
+</ul>
+</section>
+<section id="web-stuff" class="level1">
+<h1>Web Stuff</h1>
+<ul>
+<li>a bit of http</li>
+<li>wsgi</li>
+<li>flask, bottle, django</li>
+<li>sqlalchemy</li>
+<li>celery</li>
+</ul>
+</section>
+<section id="flask-in-a-slide" class="level1">
+<h1> Flask in a slide</h1>
+<pre><code>from flask import Flask
+
+app = Flask(__name__)
+
+@app.route(&#39;/&#39;)
+def index():
+    return &quot;hello world&quot;
+
+if __name__ == &quot;__main__&quot;:
+    app.run(host=&quot;0.0.0.0&quot;, debug=True)</code></pre>
+</section>
+<section id="except-all-the-others" class="level1">
+<h1>Except all the others!</h1>
+</section>
+<section id="js-celui-qui-sen-fout" class="level1">
+<h1>JS : celui qui s'en fout</h1>
+<ul>
+<li>arguments</li>
+<li>types</li>
+<li>context (this)</li>
+<li>no class, no module, etc.</li>
+</ul>
+<pre><code>In [48]: &quot;1.0&quot; + 1
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+/home/lionel/&lt;ipython-input-48-6f0b01de9b7a&gt; in &lt;module&gt;()
+----&gt; 1 &quot;1.0&quot; + 1
+
+TypeError: cannot concatenate &#39;str&#39; and &#39;int&#39; objects</code></pre>
+</section>
+<section id="cjava-ladministration-soviétique" class="level1">
+<h1>C#/Java : l'administration soviétique</h1>
+<ul>
+<li>utile dans des projets critiques</li>
+</ul>
+</section>
+<section id="un-vrai-design-de-langage" class="level1">
+<h1>Un vrai design de langage</h1>
+<ul>
+<li>list comprehension</li>
+<li>magic method</li>
+<li>decorator</li>
+<li>iterator</li>
+</ul>
+</section>
+<section id="vers-linfini-et-au-delà" class="level1">
+<h1>Vers l'infini et au delà</h1>
+<ul>
+<li>cython</li>
+<li>numpy, opengl</li>
+<li>opencv</li>
+<li>ast manipulation</li>
+</ul>
+</section>
+<section id="conclusion" class="level1">
+<h1>Conclusion</h1>
+<ul>
+<li>partout</li>
+<li>rapide</li>
+<li>simple</li>
+<li>utile</li>
+</ul>
+</section>
+<section id="merci-à" class="level1">
+<h1>Merci à</h1>
+<ul>
+<li><span class="citation" data-cites="dungeon_dave">@dungeon_dave</span></li>
+<li><span class="citation" data-cites="francois_jourde">@francois_jourde</span></li>
+<li>dfi</li>
+<li><span class="citation" data-cites="porteneuve">@porteneuve</span></li>
+<li>l'équipe BdN</li>
+</ul>
+</section>
+<section id="questions" class="level1">
+<h1>Questions</h1>
+</section>
+<section id="secret" class="level1">
+<h1>Secret</h1>
+<pre><code>pandoc -t html5 --template=template-revealjs.html \
+--standalone --section-divs \
+--variable theme=&quot;beige&quot; \
+--variable transition=&quot;linear&quot; \
+--include-in-header=css/specific.css \
+slides.md -o slides.html</code></pre>
+<p>pandoc --slide-level=2 -t html5 --template=template-revealjs.html --standalone --section-divs --variable theme=&quot;default&quot; --variable transition=&quot;concave&quot; &quot;%&quot; -o &quot;%&quot;.html</p>
+<p>pandoc -s -S -t revealjs test.md -o test.html --slide-level 2</p>
+</section>
+</div>
+
+<script src="revealjs/lib/js/head.min.js"></script>
+<script src="revealjs/js/reveal.min.js"></script>
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: false,
+    slideNumber: true,
+  // available themes are in /css/theme
+      theme: Reveal.getQueryHash().theme || 'default',
+  
+  // default/cube/page/concave/zoom/linear/fade/none
+      transition: Reveal.getQueryHash().transition || 'concave',
+  
+  // Optional libraries used to extend on reveal.js
+  dependencies: [
+    { src: 'revealjs/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'revealjs/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'revealjs/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'revealjs/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'revealjs/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+  ]
+  });
+
+</script>
+
+</body>
+</html>
