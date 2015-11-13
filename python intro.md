@@ -23,7 +23,6 @@
 * big data / science
 * 3d
 
-➙ beaucoup d'entreprises
 
 # How ?
 
@@ -112,6 +111,17 @@ if __name__ == "__main__":
 * context (this)
 * no class, no module, etc.
 
+# C#/Java : l'administration soviétique
+
+* utile dans des projets critiques
+* mais lent dans la conception, car verbeux & contraignant
+
+# Python : 
+
+* bon équilibre entre les deux
+* fortement typé
+* mais dynamique
+* la preuve : très gros projets (django, openstack, etc)
 
 ~~~~~
 In [48]: "1.0" + 1
@@ -123,11 +133,6 @@ TypeError                                 Traceback (most recent call last)
 TypeError: cannot concatenate 'str' and 'int' objects
 ~~~~~
 
-
-# C#/Java : l'administration soviétique
-
-* utile dans des projets critiques
-
 # Un vrai design de langage
 
 * list comprehension
@@ -135,12 +140,19 @@ TypeError: cannot concatenate 'str' and 'int' objects
 * decorator
 * iterator
 
+== ECMA6, 15 ans plus tôt !
+
 # Vers l'infini et au delà
 
-* cython
-* numpy, opengl
-* opencv
-* ast manipulation
+* cython : python compilé vers du C (fast!)
+* numpy, opengl : 3d and big arrays
+* opencv : traitement d'image
+* ast manipulation : meta-programming, lisp macros
+
+# Et puis Python vers js :P
+
+* brython
+* pypy.js
 
 # Conclusion
 
