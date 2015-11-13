@@ -15,7 +15,6 @@
 
 ![]( ./img/django-ajax.png)\
 
-* beaucoup d'entreprises
 
 # Everywhere else
 
@@ -23,6 +22,8 @@
 * desktop app
 * big data / science
 * 3d
+
+➙ beaucoup d'entreprises
 
 # How ?
 
@@ -57,7 +58,6 @@ class Test(object):
 
 * get python
 * get pip & venv
-    ** pypi
 * get ipython
 * Experiment & read a lot of code
 * Communicate
@@ -159,17 +159,3 @@ TypeError: cannot concatenate 'str' and 'int' objects
 
 # Questions
 
-
-# Secret
-
-~~~~~~~
-pandoc -t html5 --template=template-revealjs.html \
---standalone --section-divs \
---variable theme="beige" \
---variable transition="linear" \
---include-in-header=css/specific.css \
-slides.md -o slides.html
-~~~~~~~
-pandoc --slide-level=2 -t html5 --template=template-revealjs.html --standalone --section-divs --variable theme="default" --variable transition="concave" "%" -o "%".html
-
-pandoc -s -S -t revealjs test.md -o test.html --slide-level 2
