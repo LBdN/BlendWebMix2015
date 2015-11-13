@@ -66,7 +66,6 @@ class Test(object):
 * everything is an object
 * only names, values
 * runtime is your friend (repl, no compilation)
-* repl
 
 # Fractal & setup
 
