@@ -102,7 +102,7 @@ if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True)
 ~~~~~~~
 
-# Except all the others!
+# Par rapport aux autres languages ?
 
 # JS : celui qui s'en fout
 
@@ -135,6 +135,7 @@ TypeError: cannot concatenate 'str' and 'int' objects
 
 # Un vrai design de langage
 
+* module, classe, closures
 * list comprehension
 * magic method
 * decorator
