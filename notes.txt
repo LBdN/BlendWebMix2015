@@ -1,0 +1,15 @@
+
+
+# Secret
+
+~~~~~~~
+pandoc -t html5 --template=template-revealjs.html \
+--standalone --section-divs \
+--variable theme="beige" \
+--variable transition="linear" \
+--include-in-header=css/specific.css \
+slides.md -o slides.html
+~~~~~~~
+pandoc --slide-level=2 -t html5 --template=template-revealjs.html --standalone --section-divs --variable theme="default" --variable transition="concave" "%" -o "%".html
+
+pandoc -s -S -t revealjs test.md -o test.html --slide-level 2
